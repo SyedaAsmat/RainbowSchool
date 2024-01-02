@@ -1,7 +1,2 @@
-bin/
-obj/
-Properties/
-*.config
 *.txt
-*.csproj
 *.cs
