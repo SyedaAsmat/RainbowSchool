@@ -1,0 +1,15 @@
+.vs/
+packages/
+SchoolManagement/Add_Data
+SchoolManagement/App_Start
+bin/
+content/
+obj/
+Properties/
+Scripts/
+*.ico
+*.asax
+*.asax.cs
+*.config
+*.csproj
+*.csproj.user
