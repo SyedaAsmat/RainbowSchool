@@ -1,0 +1,26 @@
+﻿body {
+    background-color: whitesmoke;
+}
+.topPanel {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    height: 23%;
+    width: 96%;
+    background-color: lightcyan;
+    color:darkcyan;
+}
+.mainPanel {
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    right: 2%;
+    height: 75%;
+    width: 96%;
+    background-color: lightgoldenrodyellow;
+    color: darkred;
+}
+h1,h2,h4,p{
+    text-align:center;
+}
