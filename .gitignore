@@ -1,0 +1,6 @@
+.vs
+bin/
+obj/
+GlobalUsings.cs
+*.csproj
+*.sln
