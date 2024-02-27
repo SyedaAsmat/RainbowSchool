@@ -1,0 +1,11 @@
+bin/
+images/
+obj/
+Properties/
+*.csproj
+*.csproj.user
+*.json
+*.config
+*.xml
+*.Debug.config
+*.Release.config

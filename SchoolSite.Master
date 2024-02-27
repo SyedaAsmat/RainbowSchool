@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SchoolSite.master.cs" Inherits="RainbowSchoolsUI.SchoolSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 111px;
+        }
+        .auto-style5 {
+            width: 147px;
+        }
+        .auto-style6 {
+            height: 1px;
+        }
+        .auto-style7 {
+            height: 29px;
+        }
+        .auto-style8 {
+            width: 234px;
+        }
+        .auto-style9 {
+            height: 1px;
+            width: 189px;
+        }
+        .auto-style10 {
+            height: 1px;
+            width: 234px;
+        }
+        .auto-style11 {
+            height: 1px;
+            width: 206px;
+        }
+        .auto-style12 {
+            height: 1px;
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5" rowspan="2">
+                        <asp:Image ID="Image1" runat="server" Height="130px" ImageUrl="~/images/logo1.jpg" Width="130px" />
+                    </td>
+                    <td class="auto-style7" colspan="5">
+                        <h1>Rainbow Schools</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8">
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        <h4>Welcome Guest</h4>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <h4>Hi
+                        <asp:LoginName ID="LoginName1" runat="server" /></h4>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style10">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Class.aspx">Class</asp:HyperLink>
+                    </td>
+                    <td class="auto-style12">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Subject.aspx">Subjects</asp:HyperLink>
+                    </td>
+                    <td class="auto-style11">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Student.aspx">Students</asp:HyperLink>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    </td>
+                </tr>
+                </table>
+        </div>
+        <div class="mainPanel">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
